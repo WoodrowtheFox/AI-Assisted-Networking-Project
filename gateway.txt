@@ -62,7 +62,7 @@ Wireless LAN adapter Wi-Fi:
    IPv4 Address. . . . . . . . . . . : 10.140.141.38(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.0.0
    Lease Obtained. . . . . . . . . . : Wednesday, September 23, 2026 9:57:48 AM
-   Lease Expires . . . . . . . . . . : Wednesday, September 23, 2026 3:51:14 PM
+   Lease Expires . . . . . . . . . . : Wednesday, September 23, 2026 4:13:54 PM
    Default Gateway . . . . . . . . . : fe80::ff:fe01:1%15
                                        10.140.255.254
    DHCP Server . . . . . . . . . . . : 131.212.32.35
