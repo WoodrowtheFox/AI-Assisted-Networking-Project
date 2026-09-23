@@ -1,0 +1,90 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Woodrows-Laptop
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (14) I219-LM
+   Physical Address. . . . . . . . . : B4-45-06-69-9A-4D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter Ethernet 3:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Physical Address. . . . . . . . . : 0A-00-27-00-00-02
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::30c9:96cc:a6ba:e9e4%2(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 772407335
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-22-31-8E-6C-6E-07-00-13-28
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : 2C-6D-C1-6B-42-8A
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : 2E-6D-C1-6B-42-89
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : d.umn.edu
+   Description . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   Physical Address. . . . . . . . . : 2C-6D-C1-6B-42-89
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2607:ea00:200:500:6e47:5968:fb59:b25(Preferred) 
+   Temporary IPv6 Address. . . . . . : 2607:ea00:200:500:2c13:3b61:6a49:3d03(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::1693:45d5:23f6:6d9%15(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 10.140.141.38(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Lease Obtained. . . . . . . . . . : Wednesday, September 23, 2026 9:57:48 AM
+   Lease Expires . . . . . . . . . . : Wednesday, September 23, 2026 3:51:14 PM
+   Default Gateway . . . . . . . . . : fe80::ff:fe01:1%15
+                                       10.140.255.254
+   DHCP Server . . . . . . . . . . . : 131.212.32.35
+   DHCPv6 IAID . . . . . . . . . . . : 137129409
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-22-31-8E-6C-6E-07-00-13-28
+   DNS Servers . . . . . . . . . . . : 2607:ea00:200:32::32
+                                       2607:ea00:200:109::35
+                                       131.212.32.32
+                                       131.212.109.155
+                                       128.101.101.101
+                                       2607:ea00:200:32::32
+                                       2607:ea00:200:109::35
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+   Connection-specific DNS Suffix Search List :
+                                       d.umn.edu
+                                       d.umn.edu
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Physical Address. . . . . . . . . : 2C-6D-C1-6B-42-8D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
