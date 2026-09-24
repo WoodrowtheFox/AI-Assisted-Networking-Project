@@ -57,12 +57,12 @@ Wireless LAN adapter Wi-Fi:
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
    IPv6 Address. . . . . . . . . . . : 2607:ea00:200:500:6e47:5968:fb59:b25(Preferred) 
-   Temporary IPv6 Address. . . . . . : 2607:ea00:200:500:2c13:3b61:6a49:3d03(Preferred) 
+   Temporary IPv6 Address. . . . . . : 2607:ea00:200:500:bc2d:e5e2:994f:990(Preferred) 
    Link-local IPv6 Address . . . . . : fe80::1693:45d5:23f6:6d9%15(Preferred) 
    IPv4 Address. . . . . . . . . . . : 10.140.141.38(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.0.0
-   Lease Obtained. . . . . . . . . . : Wednesday, September 23, 2026 9:57:48 AM
-   Lease Expires . . . . . . . . . . : Wednesday, September 23, 2026 4:13:54 PM
+   Lease Obtained. . . . . . . . . . : Thursday, September 24, 2026 3:25:03 PM
+   Lease Expires . . . . . . . . . . : Thursday, September 24, 2026 4:55:24 PM
    Default Gateway . . . . . . . . . : fe80::ff:fe01:1%15
                                        10.140.255.254
    DHCP Server . . . . . . . . . . . : 131.212.32.35
