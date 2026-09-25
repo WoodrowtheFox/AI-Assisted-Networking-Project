@@ -1,42 +1,68 @@
 
 Windows IP Configuration
 
-   Host Name . . . . . . . . . . . . : Woodrows-Laptop
+   Host Name . . . . . . . . . . . . : UwU
    Primary Dns Suffix  . . . . . . . : 
    Node Type . . . . . . . . . . . . : Hybrid
    IP Routing Enabled. . . . . . . . : No
    WINS Proxy Enabled. . . . . . . . : No
 
-Ethernet adapter Ethernet 2:
+Ethernet adapter Ethernet:
 
-   Media State . . . . . . . . . . . : Media disconnected
-   Connection-specific DNS Suffix  . : 
-   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (14) I219-LM
-   Physical Address. . . . . . . . . : B4-45-06-69-9A-4D
+   Connection-specific DNS Suffix  . : lan
+   Description . . . . . . . . . . . : Realtek Gaming 2.5GbE Family Controller
+   Physical Address. . . . . . . . . : 04-7C-16-7B-E8-B2
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : fdbf:f6a0:b231::be2(Preferred) 
+   Lease Obtained. . . . . . . . . . : Thursday, September 24, 2026 7:35:53 PM
+   Lease Expires . . . . . . . . . . : Friday, September 25, 2026 7:35:53 AM
+   IPv6 Address. . . . . . . . . . . : fdbf:f6a0:b231:0:bbc6:d297:2f8d:cbdc(Preferred) 
+   Temporary IPv6 Address. . . . . . : fdbf:f6a0:b231:0:785b:3bc7:cae3:8214(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::a8ab:f5ea:3b3c:6ac7%16(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.1.81(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Thursday, September 24, 2026 7:35:52 PM
+   Lease Expires . . . . . . . . . . : Friday, September 25, 2026 7:35:52 AM
+   Default Gateway . . . . . . . . . : 192.168.1.1
+   DHCP Server . . . . . . . . . . . : 192.168.1.1
+   DHCPv6 IAID . . . . . . . . . . . : 100957206
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2B-C7-20-32-04-7C-16-7B-E8-B2
+   DNS Servers . . . . . . . . . . . : fdbf:f6a0:b231:0:577a:1ee9:e014:a7b9
+                                       192.168.1.1
+                                       fdbf:f6a0:b231:0:577a:1ee9:e014:a7b9
+   NetBIOS over Tcpip. . . . . . . . : Enabled
 
-Ethernet adapter Ethernet 3:
+Ethernet adapter Ethernet 2:
 
    Connection-specific DNS Suffix  . : 
    Description . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
-   Physical Address. . . . . . . . . : 0A-00-27-00-00-02
+   Physical Address. . . . . . . . . : 0A-00-27-00-00-05
    DHCP Enabled. . . . . . . . . . . : No
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::30c9:96cc:a6ba:e9e4%2(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::61d7:18:c12f:c1b0%5(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.56.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . : 
-   DHCPv6 IAID . . . . . . . . . . . : 772407335
-   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-22-31-8E-6C-6E-07-00-13-28
+   DHCPv6 IAID . . . . . . . . . . . : 755630119
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2B-C7-20-32-04-7C-16-7B-E8-B2
    NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Wi-Fi:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : RAC2V1A
+   Description . . . . . . . . . . . : Intel(R) Wireless-AC 9462
+   Physical Address. . . . . . . . . : 58-CE-2A-78-4F-0B
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
 
 Wireless LAN adapter Local Area Connection* 1:
 
    Media State . . . . . . . . . . . : Media disconnected
    Connection-specific DNS Suffix  . : 
    Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
-   Physical Address. . . . . . . . . : 2C-6D-C1-6B-42-8A
+   Physical Address. . . . . . . . . : 58-CE-2A-78-4F-0C
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
 
@@ -45,46 +71,15 @@ Wireless LAN adapter Local Area Connection* 2:
    Media State . . . . . . . . . . . : Media disconnected
    Connection-specific DNS Suffix  . : 
    Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
-   Physical Address. . . . . . . . . : 2E-6D-C1-6B-42-89
-   DHCP Enabled. . . . . . . . . . . : Yes
+   Physical Address. . . . . . . . . : 5A-CE-2A-78-4F-0B
+   DHCP Enabled. . . . . . . . . . . : No
    Autoconfiguration Enabled . . . . : Yes
-
-Wireless LAN adapter Wi-Fi:
-
-   Connection-specific DNS Suffix  . : d.umn.edu
-   Description . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
-   Physical Address. . . . . . . . . : 2C-6D-C1-6B-42-89
-   DHCP Enabled. . . . . . . . . . . : Yes
-   Autoconfiguration Enabled . . . . : Yes
-   IPv6 Address. . . . . . . . . . . : 2607:ea00:200:500:6e47:5968:fb59:b25(Preferred) 
-   Temporary IPv6 Address. . . . . . : 2607:ea00:200:500:bc2d:e5e2:994f:990(Preferred) 
-   Link-local IPv6 Address . . . . . : fe80::1693:45d5:23f6:6d9%15(Preferred) 
-   IPv4 Address. . . . . . . . . . . : 10.140.141.38(Preferred) 
-   Subnet Mask . . . . . . . . . . . : 255.255.0.0
-   Lease Obtained. . . . . . . . . . : Thursday, September 24, 2026 3:25:03 PM
-   Lease Expires . . . . . . . . . . : Thursday, September 24, 2026 4:55:24 PM
-   Default Gateway . . . . . . . . . : fe80::ff:fe01:1%15
-                                       10.140.255.254
-   DHCP Server . . . . . . . . . . . : 131.212.32.35
-   DHCPv6 IAID . . . . . . . . . . . : 137129409
-   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-22-31-8E-6C-6E-07-00-13-28
-   DNS Servers . . . . . . . . . . . : 2607:ea00:200:32::32
-                                       2607:ea00:200:109::35
-                                       131.212.32.32
-                                       131.212.109.155
-                                       128.101.101.101
-                                       2607:ea00:200:32::32
-                                       2607:ea00:200:109::35
-   NetBIOS over Tcpip. . . . . . . . : Enabled
-   Connection-specific DNS Suffix Search List :
-                                       d.umn.edu
-                                       d.umn.edu
 
 Ethernet adapter Bluetooth Network Connection:
 
    Media State . . . . . . . . . . . : Media disconnected
    Connection-specific DNS Suffix  . : 
    Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
-   Physical Address. . . . . . . . . : 2C-6D-C1-6B-42-8D
+   Physical Address. . . . . . . . . : 58-CE-2A-78-4F-0F
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
