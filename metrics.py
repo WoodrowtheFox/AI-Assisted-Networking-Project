@@ -6,10 +6,52 @@ def ping(tries, ip):
             file.write(results.stdout)
 
 def parse_ping(tries, IPS):
-      metricdata = {}
-      for ip in IPS:
+    metricdata = {}
+    for ip in IPS:
         ping(tries, ip)
-        file = open("pingresults.txt", "r")
+        currip = {}
+        currip["Tested IP"] = ip
+        pingfile = open("pingresults.txt", "r")
+        i = 0
+        for line in pingfile:
+            oldline = line
+            currline = line.split()
+            if("Reply" in currline):
+                 i += 1
+                 for item in currline:
+                    if(item.__contains__("bytes=")):
+                        currip["Bytes Sent " + str(i)] = item.replace("bytes=", "")
+                    if(item.__contains__("time=")):
+                        item = item.replace("time=", "")
+                        item = item.replace("ms", "")
+                        currip["Time " + str(i)] = item
+            if("Packets:" in currline):
+                next = 2
+                down = 0
+                for item in currline:
+                    if(next == 0):
+                        item = item.replace("ms", "")
+                        currip["Loss"] = item
+                    if(down == 1):
+                        next += -1
+                    if(item == "Lost"):
+                        next += -1
+                        down += 1
+            if("Minimum" in currline):
+                next = 0
+                for item in currline:
+                    if(next == 2):
+                        item = item.replace("ms", "")
+                        currip["Min"] = item
+                    if(next == 5):
+                        item = item.replace("ms", "")
+                        currip["Max"] = item
+                    if(next == 8):
+                        item = item.replace("ms", "")
+                        currip["Avg"] = item
+                    next += 1
+        metricdata[ip] = currip
+    print(metricdata)
 
 def main():
     ips = []
