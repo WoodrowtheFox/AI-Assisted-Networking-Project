@@ -1,4 +1,22 @@
 import subprocess
+import math
+import speedtest
+
+def get_route(ip):
+    route = subprocess.run(["tracert", "-h", "30", ip], capture_output=True, text=True)
+    with open("route.txt", "w") as file:
+        file.write(route.stdout)
+
+def throughput():
+    throughput = {}
+    time = speedtest.Speedtest()
+    time.get_best_server()
+    upload = time.upload()
+    download = time.download()
+
+    throughput["Upload"] = upload
+    throughput["Download"] = download
+    return throughput
 
 def ping(tries, ip):
     results = subprocess.run(["ping", "-n", tries, ip], capture_output=True, text=True)
@@ -7,6 +25,8 @@ def ping(tries, ip):
 
 def parse_ping(tries, IPS):
     metricdata = {}
+    metricdata["Throughput"] = throughput()
+    jitter = []
     for ip in IPS:
         ping(tries, ip)
         currip = {}
@@ -25,13 +45,15 @@ def parse_ping(tries, IPS):
                         item = item.replace("time=", "")
                         item = item.replace("ms", "")
                         currip["Time " + str(i)] = item
+                        jitter.append(item)
             if("Packets:" in currline):
-                next = 2
+                next = 3
                 down = 0
                 for item in currline:
                     if(next == 0):
-                        item = item.replace("ms", "")
-                        currip["Loss"] = item
+                        item = item.replace("(", "")
+                        item = item.replace("%", "")
+                        currip["Loss Percent"] = item
                     if(down == 1):
                         next += -1
                     if(item == "Lost"):
@@ -41,17 +63,26 @@ def parse_ping(tries, IPS):
                 next = 0
                 for item in currline:
                     if(next == 2):
-                        item = item.replace("ms", "")
+                        item = item.replace("ms,", "")
                         currip["Min"] = item
                     if(next == 5):
-                        item = item.replace("ms", "")
+                        item = item.replace("ms,", "")
                         currip["Max"] = item
                     if(next == 8):
                         item = item.replace("ms", "")
                         currip["Avg"] = item
                     next += 1
+        j = 0
+        for time in jitter:
+            j += int(time)
+        avg_time = j/jitter.count()
+        sum_time = 0
+        for time in jitter:
+            sum_time += ((time - avg_time) * (time - avg_time))
+        real_jitter = math.sqrt((1/jitter.count()) * sum_time)
+        currip["Jitter"] = real_jitter
         metricdata[ip] = currip
-    print(metricdata)
+    return metricdata
 
 def main():
     ips = []
@@ -65,6 +96,8 @@ def main():
         else:
              ips.append(ip)
         i += 1
-    parse_ping(tries, ips)
+    metrics = parse_ping(tries, ips)
 
-main()
+#main()
+
+get_route("8.8.8.8")
