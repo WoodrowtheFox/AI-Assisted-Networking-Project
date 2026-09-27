@@ -3,9 +3,26 @@ import math
 import speedtest
 
 def get_route(ip):
+    hops = 0
+    in_block = 0
     route = subprocess.run(["tracert", "-h", "30", ip], capture_output=True, text=True)
     with open("route.txt", "w") as file:
         file.write(route.stdout)
+    hopfile = open("route.txt", "r")
+
+    for line in hopfile:
+        currline = line.split()
+        if(currline == []):
+            in_block = 0
+        if(in_block == 1):
+            if("Request" not in currline):
+                hops += 1
+        if(not (currline == []) and currline[0] == "1"):
+            in_block = 1
+            if("Request" not in currline):
+                hops += 1
+    return hops
+    
 
 def throughput():
     throughput = {}
@@ -26,15 +43,15 @@ def ping(tries, ip):
 def parse_ping(tries, IPS):
     metricdata = {}
     metricdata["Throughput"] = throughput()
-    jitter = []
     for ip in IPS:
+        jitter = []
         ping(tries, ip)
         currip = {}
         currip["Tested IP"] = ip
+        currip["Hops"] = get_route(ip)
         pingfile = open("pingresults.txt", "r")
         i = 0
         for line in pingfile:
-            oldline = line
             currline = line.split()
             if("Reply" in currline):
                  i += 1
@@ -75,11 +92,11 @@ def parse_ping(tries, IPS):
         j = 0
         for time in jitter:
             j += int(time)
-        avg_time = j/jitter.count()
+        avg_time = j/len(jitter)
         sum_time = 0
         for time in jitter:
-            sum_time += ((time - avg_time) * (time - avg_time))
-        real_jitter = math.sqrt((1/jitter.count()) * sum_time)
+            sum_time += ((int(time) - avg_time) * (int(time) - avg_time))
+        real_jitter = math.sqrt((1/len(jitter)) * sum_time)
         currip["Jitter"] = real_jitter
         metricdata[ip] = currip
     return metricdata
@@ -97,7 +114,8 @@ def main():
              ips.append(ip)
         i += 1
     metrics = parse_ping(tries, ips)
+    print(metrics)
 
-#main()
+##main()
 
-get_route("8.8.8.8")
+print(get_route("8.8.8.8"))
