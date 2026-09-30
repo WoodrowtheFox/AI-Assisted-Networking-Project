@@ -56,6 +56,3 @@ def get_ipconfig_data():
             currblock["Interface"] = "Ethernet"
     configfiledata["DNS"] = dns_data
     return configfiledata
-
-
-print(get_ipconfig_data())

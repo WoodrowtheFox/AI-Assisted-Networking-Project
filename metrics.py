@@ -1,6 +1,6 @@
 import subprocess
 import math
-import speedtest
+import json
 
 def get_route(ip):
     hops = 0
@@ -26,10 +26,11 @@ def get_route(ip):
 
 def throughput():
     throughput = {}
-    time = speedtest.Speedtest()
-    time.get_best_server()
-    upload = time.upload()
-    download = time.download()
+    result = subprocess.run(["C:\\Projects\\Speedtest\\speedtest.exe", "-f", "json"], capture_output=True, text=True)
+
+    data = json.loads(result.stdout)
+    download = data["download"]["bandwidth"] * 8 
+    upload = data["upload"]["bandwidth"] * 8
 
     throughput["Upload"] = upload
     throughput["Download"] = download
@@ -114,8 +115,4 @@ def main():
              ips.append(ip)
         i += 1
     metrics = parse_ping(tries, ips)
-    print(metrics)
-
-##main()
-
-print(get_route("8.8.8.8"))
+    return metrics
