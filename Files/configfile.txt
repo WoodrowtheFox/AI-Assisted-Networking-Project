@@ -15,22 +15,22 @@ Ethernet adapter Ethernet:
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
    IPv6 Address. . . . . . . . . . . : fdbf:f6a0:b231::be2(Preferred) 
-   Lease Obtained. . . . . . . . . . : Saturday, September 26, 2026 8:13:10 AM
-   Lease Expires . . . . . . . . . . : Saturday, September 26, 2026 8:13:09 PM
+   Lease Obtained. . . . . . . . . . : Sunday, October 4, 2026 2:03:17 PM
+   Lease Expires . . . . . . . . . . : Monday, October 5, 2026 2:03:16 AM
    IPv6 Address. . . . . . . . . . . : fdbf:f6a0:b231:0:bbc6:d297:2f8d:cbdc(Preferred) 
-   Temporary IPv6 Address. . . . . . : fdbf:f6a0:b231:0:ccec:ece8:7330:9904(Preferred) 
+   Temporary IPv6 Address. . . . . . : fdbf:f6a0:b231:0:ecab:34a5:32af:f8cb(Preferred) 
    Link-local IPv6 Address . . . . . : fe80::a8ab:f5ea:3b3c:6ac7%16(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.1.81(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : Thursday, September 24, 2026 7:35:52 PM
-   Lease Expires . . . . . . . . . . : Saturday, September 26, 2026 8:13:10 PM
+   Lease Obtained. . . . . . . . . . : Sunday, October 4, 2026 6:41:34 AM
+   Lease Expires . . . . . . . . . . : Monday, October 5, 2026 2:03:18 AM
    Default Gateway . . . . . . . . . : 192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
    DHCPv6 IAID . . . . . . . . . . . : 100957206
    DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2B-C7-20-32-04-7C-16-7B-E8-B2
-   DNS Servers . . . . . . . . . . . : fdbf:f6a0:b231:0:577a:1ee9:e014:a7b9
+   DNS Servers . . . . . . . . . . . : fdbf:f6a0:b231:0:3531:83e0:6665:7ca4
                                        192.168.1.1
-                                       fdbf:f6a0:b231:0:577a:1ee9:e014:a7b9
+                                       fdbf:f6a0:b231:0:3531:83e0:6665:7ca4
    NetBIOS over Tcpip. . . . . . . . : Enabled
 
 Ethernet adapter Ethernet 2:

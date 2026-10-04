@@ -1,12 +1,9 @@
-import metrics
-
-def eval():
-    data = metrics.main()
+def eval(metric):
     eval_data = {}
     upload = input("What is your ISPs advertised upload speed?(Mbps):\n")
     download = input("What is your ISps advertised download speed?(Mbps):\n")
-    tested_upload = data["Throughput"]["Upload"] / 1000000
-    tested_download = data["Throughput"]["Download"] / 1000000
+    tested_upload = metric["Throughput"]["Upload"] / 1000000
+    tested_download = metric["Throughput"]["Download"] / 1000000
 
     if(int(upload) < tested_upload):
         eval_data["Upload"] = ["Your upload speed is below advertised.", 
@@ -20,11 +17,11 @@ def eval():
     else:
         eval_data["Download"] = ["Your upload speed is above advertised.",
         "The speed found while testing was " + str(tested_download) + " while you the advertised download was " + download]
+    eval_data["Throughput"] = metric["Throughput"]
+    metric.pop("Throughput")
 
-    data.pop("Throughput")
-
-    for ip in data:
-        currvalues = data[ip]
+    for ip in metric:
+        currvalues = metric[ip]
         if(int(currvalues["Avg"]) < 50):
             eval_data["Latency"] = "You have very low latency!"
         elif(50 < int(currvalues["Avg"]) < 150):
@@ -46,4 +43,4 @@ def eval():
         else:
             eval_data["Loss"] = "You have very bad packet loss"
 
-    return [data, eval_data]
+    return eval_data

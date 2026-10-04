@@ -48,6 +48,7 @@ def parse_ping(tries, IPS):
         jitter = []
         ping(tries, ip)
         currip = {}
+        currip["Tries"] = tries
         currip["Tested IP"] = ip
         currip["Hops"] = get_route(ip)
         pingfile = open("pingresults.txt", "r")
