@@ -1,7 +1,9 @@
 def eval(metric):
     eval_data = {}
-    upload = input("What is your ISPs advertised upload speed?(Mbps):\n")
-    download = input("What is your ISps advertised download speed?(Mbps):\n")
+    upload = metric["Expected Upload"]
+    download = metric["Expected Download"]
+    metric.pop("Expected Upload")
+    metric.pop("Expected Download")
     tested_upload = metric["Throughput"]["Upload"] / 1000000
     tested_download = metric["Throughput"]["Download"] / 1000000
 

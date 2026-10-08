@@ -104,9 +104,10 @@ def parse_ping(tries, IPS):
     return metricdata
 
 def main():
+    upload = input("What is your ISPs advertised upload speed?(Mbps):\n")
+    download = input("What is your ISPs advertised download speed?(Mbps):\n")
     ips = []
     tries = input("How many ping tries would you like to do?\n")
-    i = 1
     exit = 0
     while(exit == 0):
         ip = input("Enter a test IP, if there are no more ips enter(EXIT):\n")
@@ -114,6 +115,7 @@ def main():
              exit = 1
         else:
              ips.append(ip)
-        i += 1
     metrics = parse_ping(tries, ips)
+    metrics["Expected Upload"] = upload
+    metrics["Expected Download"] = download
     return metrics
