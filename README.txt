@@ -1,8 +1,10 @@
-1. Make sure that you have Ookla speedtest for Desktop installed.
+1. Make sure that you have speedtest-cli for Desktop installed and run it once to accept the license.
+
+2. Make sure that you have done "pip install matplotlib requests" for the final report.
 
 2. Once you have that installed go to metrics.py and change line 29 to be your file path.
 
-3. Once that is done you can run it by typing in python -m report (Assuming you are using Windows and have python installed).
+3. Once that is done you can run it by typing in python -m report (Assuming you are using Windows and have python 3.12 or newer installed).
 
 4. It will then prompt you to put in your ISPs advertised download and upload speed in Mbps.
 

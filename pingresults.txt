@@ -2,6 +2,15 @@
 Pinging 168.126.63.1 with 32 bytes of data:
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=187ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
@@ -9,15 +18,6 @@ Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
-Reply from 168.126.63.1: bytes=32 time=187ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 

@@ -96,12 +96,14 @@ def parse_ping(tries, IPS):
             j += int(time)
         if(len(jitter) == 0):
             avg_time = 0
+            size = 1
         else:
             avg_time = j/len(jitter)
+            size = len(jitter)
         sum_time = 0
         for time in jitter:
             sum_time += ((int(time) - avg_time) * (int(time) - avg_time))
-        real_jitter = math.sqrt((1/len(jitter)) * sum_time)
+        real_jitter = math.sqrt((1/size) * sum_time)
         currip["Jitter"] = real_jitter
         metricdata[ip] = currip
     return metricdata
