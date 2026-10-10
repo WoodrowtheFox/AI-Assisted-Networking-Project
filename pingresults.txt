@@ -1,10 +1,27 @@
 
-Pinging 1.1.1.1 with 32 bytes of data:
-Reply from 1.1.1.1: bytes=32 time=24ms TTL=49
-Reply from 1.1.1.1: bytes=32 time=23ms TTL=49
-Reply from 1.1.1.1: bytes=32 time=23ms TTL=49
+Pinging 168.126.63.1 with 32 bytes of data:
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=187ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=187ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
+Reply from 168.126.63.1: bytes=32 time=188ms TTL=45
 
-Ping statistics for 1.1.1.1:
-    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Ping statistics for 168.126.63.1:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
 Approximate round trip times in milli-seconds:
-    Minimum = 23ms, Maximum = 24ms, Average = 23ms
+    Minimum = 187ms, Maximum = 188ms, Average = 187ms

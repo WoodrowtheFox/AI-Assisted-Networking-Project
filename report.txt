@@ -12,9 +12,9 @@ fdbf:f6a0:b231:0:3531:83e0:6665:7ca4
 fdbf:f6a0:b231:0:3531:83e0:6665:7ca4
 Evaluation:
 Upload: Your upload speed is below advertised.
-The speed found while testing was 948.454144 while you the advertised upload was 700
+The speed found while testing was 949.035096 while you the advertised upload was 600
 Download: Your upload speed is below advertised.
-The speed found while testing was 930.833136 while you the advertised download was 500
-Latency: You have very low latency!
-Jitter: You have very low jitter
-Loss: You have very low packet loss
+The speed found while testing was 942.142288 while you the advertised download was 400
+Latency: You have very bad latency..
+Jitter: You have very low jitter!
+Loss: You have very low packet loss!

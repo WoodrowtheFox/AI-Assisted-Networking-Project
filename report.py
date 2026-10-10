@@ -30,33 +30,45 @@ def generate_report():
         Avg.append(int(metric[ip]["Avg"]))
         Jitter.append(metric[ip]["Jitter"])
 
+    plt.figure(figsize=(12, 6))
     plt.bar(IPs, Avg)
     plt.title("Latency by IP")
     plt.xlabel("Target")
     plt.ylabel("Latency (ms)")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
     plt.savefig("Latency.png")
-    plt.clf()
+    plt.close()
 
+    plt.figure(figsize=(12, 6))
     plt.bar(IPs, Jitter)
     plt.title("Jitter by IP")
     plt.xlabel("Target")
     plt.ylabel("Jitter (ms)")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
     plt.savefig("Jitter.png")
-    plt.clf()
+    plt.close()
 
+    plt.figure(figsize=(12, 6))
     plt.bar(IPs, Hops)
     plt.title("Hops by IP")
     plt.xlabel("Target")
     plt.ylabel("Hops")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
     plt.savefig("Hops.png")
-    plt.clf()
+    plt.close()
 
+    plt.figure(figsize=(12, 6))
     plt.bar(IPs, Loss_Percent)
     plt.title("Packet Loss by IP")
     plt.xlabel("Target")
     plt.ylabel("Packets")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
     plt.savefig("Packet.png")
-    plt.clf()
+    plt.close()
 
     upload = eval['Throughput']["Upload"]/1000000 
     download = eval['Throughput']["Download"]/1000000
@@ -72,7 +84,7 @@ def generate_report():
     )
 
     plt.savefig("Throughput.png")
-    plt.clf()
+    plt.close()
 
     with open("report.txt", "w") as file:
             file.write("Report:\n")

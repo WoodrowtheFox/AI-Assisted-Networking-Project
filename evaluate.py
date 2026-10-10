@@ -29,20 +29,20 @@ def eval(metric):
         elif(50 < int(currvalues["Avg"]) < 150):
             eval_data["Latency"] = "Your latency is average, it could be imporved but, isnt a big deal"
         else:
-            eval_data["Latency"] = "You have very bad latency!"
+            eval_data["Latency"] = "You have very bad latency.."
 
         if(int(currvalues["Jitter"]) < 10):
-            eval_data["Jitter"] = "You have very low jitter"
+            eval_data["Jitter"] = "You have very low jitter!"
         elif(10 < int(currvalues["Jitter"]) < 30):
             eval_data["Jitter"] = "You have an average amount  of jitter"
         else:
-            eval_data["Jitter"] = "You have very bad jitter"
+            eval_data["Jitter"] = "You have very bad jitter.."
 
         if(int(currvalues["Loss Percent"]) < 1):
-            eval_data["Loss"] = "You have very low packet loss"
+            eval_data["Loss"] = "You have very low packet loss!"
         elif(1 < int(currvalues["Loss Percent"]) < 2.5):
-            eval_data["Loss"] = "You have very low packet loss"
+            eval_data["Loss"] = "You have an average amount of packet loss"
         else:
-            eval_data["Loss"] = "You have very bad packet loss"
+            eval_data["Loss"] = "You have very bad packet loss..."
 
     return eval_data

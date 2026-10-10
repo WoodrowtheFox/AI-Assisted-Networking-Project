@@ -94,7 +94,10 @@ def parse_ping(tries, IPS):
         j = 0
         for time in jitter:
             j += int(time)
-        avg_time = j/len(jitter)
+        if(len(jitter) == 0):
+            avg_time = 0
+        else:
+            avg_time = j/len(jitter)
         sum_time = 0
         for time in jitter:
             sum_time += ((int(time) - avg_time) * (int(time) - avg_time))
