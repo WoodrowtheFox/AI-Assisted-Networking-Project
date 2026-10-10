@@ -17,10 +17,10 @@ fdbf:f6a0:b231:0:3531:83e0:6665:7ca4
 
 Evaluation:
 Upload: Your upload speed is above advertised.
-The speed found while testing was 949.131456 while your the advertised upload was 600
+The speed found while testing was 948.6892 while the advertised upload was 600
 
 Download: Your download speed is above advertised.
-The speed found while testing was 940.065872 while your the advertised download was 500
+The speed found while testing was 940.828584 while the advertised download was 500
 
 IP: 8.8.8.8
 Latency: You have very low latency!

@@ -9,16 +9,16 @@ def eval(metric, local):
 
     if(int(upload) > tested_upload):
         eval_data["Upload"] = ["Your upload speed is below advertised.", 
-        "The speed found while testing was " + str(tested_upload) + " while your the advertised upload was " + upload]
+        "The speed found while testing was " + str(tested_upload) + " while the advertised upload was " + upload]
     else:
         eval_data["Upload"] = ["Your upload speed is above advertised.", 
-        "The speed found while testing was " + str(tested_upload) + " while your the advertised upload was " + upload]
+        "The speed found while testing was " + str(tested_upload) + " while the advertised upload was " + upload]
     if(int(download) > tested_download):
         eval_data["Download"] = ["Your download speed is below advertised.", 
-        "The speed found while testing was " + str(tested_download) + " while your the advertised download was " + download]
+        "The speed found while testing was " + str(tested_download) + " while the advertised download was " + download]
     else:
         eval_data["Download"] = ["Your download speed is above advertised.",
-        "The speed found while testing was " + str(tested_download) + " while your the advertised download was " + download]
+        "The speed found while testing was " + str(tested_download) + " while the advertised download was " + download]
     eval_data["Throughput"] = metric["Throughput"]
     metric.pop("Throughput")
 
@@ -35,10 +35,10 @@ def eval(metric, local):
             ipresults["Latency"] = "You have very bad latency.."
             ipresults["Limprove"] = "This is likely due to distance, if possible switch to using a server closer to you."
 
-        if(int(currvalues["Jitter"]) <= 10):
+        if(float(currvalues["Jitter"]) <= 10):
             ipresults["Jitter"] = "You have very low jitter!"
             ipresults["Jimprove"] = "There is nothing for you to do!"
-        elif(10 < int(currvalues["Jitter"]) <= 30):
+        elif(10 < float(currvalues["Jitter"]) <= 30):
             ipresults["Jitter"] = "You have an average amount of jitter."
             ipresults["Jimprove"] = "There is no need to look into it."
         else:
@@ -46,7 +46,7 @@ def eval(metric, local):
             if(local['NON-DNS']["Interface"] != "Ethernet"):
                 ipresults["Jimprove"] = "Try switching to using a wired connection instead of Wi-Fi."
             else:
-                ipresults["Jimprove"] = "Try reduce the congestion on your network."
+                ipresults["Jimprove"] = "Try to reduce the congestion on your network."
 
         if(int(currvalues["Loss Percent"]) <= 1):
             ipresults["Loss"] = "You have very low packet loss!"
